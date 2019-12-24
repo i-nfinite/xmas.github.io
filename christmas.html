@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+</head>
+<link rel="stylesheet" type="text/css">
+<style>
+ /*----- Toggle Button -----*/ .toggle-nav { 	display:none; } /*----- Menu -----*/ @media screen and (min-width: 860px) { 	.menu { 	width:100%; 	padding:10px 18px; 	box-shadow:0px 1px 1px rgba(0,0,0,0.15); 	border-radius:3px; 	background:#303030; 	} } .menu ul { 	display:inline-block; } .menu li { 	margin:0px 50px 0px 0px; 	float:left; 	list-style:none; 	font-size:17px; } .menu li:last-child { 	margin-right:0px; } .menu a { 	text-shadow:0px 1px 0px rgba(0,0,0,0.5); 	color:#777; 	transition:color linear 0.15s; } .menu a:hover, .menu .current-item a { 	text-decoration:none; 	color:#66a992; } /*----- Search -----*/ .search-form { 	float:right; 	display:inline-block; } .search-form input { 	width:200px; 	height:30px; 	padding:0px 8px; 	float:left; 	border-radius:2px 0px 0px 2px; 	font-size:93px; } .search-form button { 	height:30px; 	padding:0px 7px; 	float:right; 	border-radius:0px 2px 2px 0px; 	background:#66a992; 	font-size:18px; 	font-weight:600; 	text-shadow:0px 1px 0px rgba(0,0,0,0.3); 	color:#fff; } /*----- Responsive -----*/ @media screen and (max-width: 1150px) { 	.wrap { 		width:90%; 	} } @media screen and (max-width: 970px) { 	.search-form input { 		width:120px; 	} } @media screen and (max-width: 860px) { 	.menu { 		position:relative; 		display:inline-block; 	} 	.menu ul.active { 		display:none; 	} 	.menu ul { 		width:100%; 		position:absolute; 		top:120%; 		left:0px; 		padding:10px 18px; 		box-shadow:0px 1px 1px rgba(0,0,0,0.15); 		border-radius:3px; 		background:#303030; 	} 	.menu ul:after { 		width:0px; 		height:0px; 		position:absolute; 		top:0%; 		left:22px; 		content:''; 		transform:translate(0%, -100%); 		border-left:7px solid transparent; 		border-right:7px solid transparent; 		border-bottom:7px solid #303030; 	} 	.menu li { 		margin:5px 0px 5px 0px; 		float:none; 		display:block; 	} 	.menu a { 		display:block; 	} 	.toggle-nav { 		padding:20px; 		float:left; 		display:inline-block; 		box-shadow:0px 1px 1px rgba(0,0,0,0.15); 		border-radius:3px; 		background:#303030; 		text-shadow:0px 1px 0px rgba(0,0,0,0.5); 		color:#777; 		font-size:20px; 		transition:color linear 0.15s; 	} 	.toggle-nav:hover, .toggle-nav.active { 		text-decoration:none; 		color:#66a992; 	} 	.search-form { 		margin:12px 0px 0px 20px; 		float:left; 	} 	.search-form input { 		box-shadow:-1px 1px 2px rgba(0,0,0,0.1); 	} }
+ #h{
+ color:#DC143C;
+ text-align:center;
+ text-shadow: 2px 2px #ff0000;
+ font-size:60px;
+ background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaBDjYeGlr6tWGsSVpdJyXI8vTdYwMxxoFfBGdnCaVLCuq1UCl");
+ }
+ input[type=text] {
+
+ width: 100%;
+
+ padding: 12px 20px;
+
+ margin: 8px 0;
+
+ box-sizing: border-box;
+}
+#form{
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRGH-M0SfTIofhM2auUE2thnfZUBF37CetCxLcFdpu96-8LGQF");
+height:500px;
+}
+#name{
+width:400px;
+background-color:#5FD;
+height:62px;
+font-size:30px;
+}
+#b{
+width:200px;
+height:190px;
+font-size:40px;
+}
+#div{
+background-image:url("https://i.pinimg.com/originals/a3/94/6c/a3946cb29bda8232b2a93a0c05880139.gif");
+}
+#text{
+width:600px;
+height:100px;
+font-size:30px;
+}
+</style>
+</head>
+<body>
+<div>
+<div class="jumbotron">
+<nav class="menu"> 	<ul class="active"> 		<li class="current-item"><a href="index.html">Home</a></li> 		<li><a href="terms.html">Terms and Conditions</a></li> 		<li><a href="privacy.html">Privacy And Policy </a></li> 		<li><a href="#">Contact Us</a></li> 		<li><a href="#">Blog</a></li> 	</ul> 	<a class="toggle-nav" href="#">&#9776;</a> 	</nav>
+</div> </br>
+<div id="h">
+CHRISTMAS GREETINGS
+<div> </br>
+<div id="form">
+<form>
+<input type="text" id="name" value="നിങ്ങളുടെ പേര് എഴുതുക" ></br>
+<button onclick="christmas()" id="b"> ഇവിടെ ക്ലിക്ക് ചെയ്യുക  </button>
+</form>
+</br>
+<a href​=​"whatsapp://send?text=Hello%20World!"​>​Hello, world!</a>
+</br>
+<textarea id="text" maxlength="200" readonly></textarea>
+</div>
+<div id="div">
+<marquee>
+<img src="https://i.pinimg.com/originals/95/4d/49/954d49b305b9344d69f0bcb341f0e698.png" height="500px" >
+</marquee>
+</div>
+</div>
+<script type="text/javascript">
+function christmas(b){
+var a=document.getElementById("name");
+var b=document.getElementById("text").value=  "സന്തോഷകരമായ ക്രിസ്മസ് ആശംസകൾ"+""+a.value;
+
+}
+</script>
+</body>
